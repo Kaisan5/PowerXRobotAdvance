@@ -24,13 +24,13 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '25062453'))
-API_HASH = environ.get('API_HASH', 'ccf735bb7d834b95ec85657c604cb49f')
-OWNER_ID = environ.get('OWNER_ID', '6670354006')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6625875921:AAEyc5QoqfghLeEUicDK4BMTOFXFNBSwqQA')
+API_ID = int(environ.get('API_ID', '23537462'))
+API_HASH = environ.get('API_HASH', 'c9599a5aa61ee8ca4f5e778d20c61f24')
+OWNER_ID = environ.get('OWNER_ID', '7654385403')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7527380082:AAHalRmG1B8bHwMOCf87c5RM72FvnLtTS_4')
 
 # for eval function, work only in a specific group
-EVAL_ID = environ.get("EVAL_ID", "-1001566837125")
+EVAL_ID = environ.get("EVAL_ID", "-1001859327818")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -47,8 +47,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/2f7d2f1c5fab
 SP = (environ.get('SP', 'https://graph.org/file/a0c2ab09ea6d665deb174.jpg https://graph.org/file/769aee62c9fbfd58fe7c0.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6670354006').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002205552282 -1002216874688 -1002153836747 -1002100267327').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5274479443').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001457313028').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -56,8 +56,8 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001728245691')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002100267327')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001859327818')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002201872723')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
@@ -69,7 +69,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 PREFIX = environ.get("PREFIX", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://3rc8kisoem:xymQqPIANbkFFK7X@cluster0.avgnpd3.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://WarDevil:vz0Q8jIn5o6xhO82@cluster0.rh2msvd.mongodb.net/")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
