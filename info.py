@@ -141,7 +141,7 @@ app = Client(
     api_id=API_ID, 
     api_hash=API_HASH)
 LOGGER.info("ᴡᴀɪᴛ ʙʀᴏ.. ʙᴏᴛ sᴛᴀʀᴛ ʜᴏ ʀʜᴀ ʜᴀɪ")
-app.start()
+#app.start()
 
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
