@@ -135,13 +135,6 @@ LANGUAGES = ["malayalam", "tamil" ,"english", "hindi", "telugu", "kannada"]
 
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
-app = Client(
-    "app2", 
-    bot_token=BOT_TOKEN, 
-    api_id=API_ID, 
-    api_hash=API_HASH)
-LOGGER.info("ᴡᴀɪᴛ ʙʀᴏ.. ʙᴏᴛ sᴛᴀʀᴛ ʜᴏ ʀʜᴀ ʜᴀɪ")
-#app.start()
 
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
