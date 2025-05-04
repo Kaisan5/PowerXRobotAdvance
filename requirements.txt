@@ -106,3 +106,6 @@ secureme==0.0.4
 gpytranslate
 googletrans
 SpeechRecognition
+
+#......backchodi......
+flask
