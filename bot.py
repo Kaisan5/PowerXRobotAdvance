@@ -102,12 +102,9 @@ class Bot(Client):
                 current += 1
 
 
-app = Bot()
+
 #..........................................
-from bot import Bot
-import pyrogram.utils
+from info import app
 
-pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
-
-if __name__ == "__bot__":
-    Bot().run()
+if __name__ == "__main__":
+    app.run()
